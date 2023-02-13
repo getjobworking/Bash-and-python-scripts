@@ -22,7 +22,8 @@ do
 
   if [[ ! -f $file ]]
   then
-    echo "Files ${file} does not exist!"
+    echo "Files ${file} does not exist!" && exit 1
+     
   fi
 
   filename_prefix=`convert $file -scale 1x1 -format "%c" histogram:info: | tail -n 1 | awk -F\( '{print $2}'|cut -d\) -f1|awk -F"," '{printf "%03d.%03d.%03d\n", $1 , $2 , $3 }'`
@@ -30,7 +31,7 @@ do
   file_name=$filename_prefix-$filename_suffix.$extension
   cp  $file $file_name
 
-echo "file" $n $file $file_name
+echo "file" $(($n+1)) $file $file_name
 
 n=$((n+1))
 
