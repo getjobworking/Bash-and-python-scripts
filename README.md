@@ -15,4 +15,11 @@ setup_ocrit.sh - the script converts jpg and png files to text in the specified 
 
 The setup.py file is the installer of the scripts contained in the setup.zip archive, according to the settings of the setup.ini file. Setup.ini also creates the folders defined in the configuration file.
 
+i2p.sh
+Script to generate PDF from JPG images in the "target" directory
+
+ren_jpg_png_num.sh
+This script processes all jpg, jpeg, and png files in the current directory.
+It automatically converts png files to jpg format with the same name,and renames all jpg and jpeg files with a specified new name or a default name with a numeric suffix.The converted png files are moved to a folder named "png". If the "png" folder does not exist, it will be created.
+
 sh files need to be granted run rights.
