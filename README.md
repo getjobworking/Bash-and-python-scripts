@@ -22,4 +22,7 @@ ren_jpg_png_num.sh
 This script processes all jpg, jpeg, and png files in the current directory.
 It automatically converts png files to jpg format with the same name,and renames all jpg and jpeg files with a specified new name or a default name with a numeric suffix.The converted png files are moved to a folder named "png". If the "png" folder does not exist, it will be created.
 
+all.img1pdf.all.subf.sh
+A script to generate PDF files from JPG images in subfolders of a specified directory and save them to the target_pdf_generated folder.
+
 sh files need to be granted run rights.
