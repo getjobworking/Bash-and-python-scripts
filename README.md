@@ -25,4 +25,15 @@ It automatically converts png files to jpg format with the same name,and renames
 all.img1pdf.all.subf.sh
 A script to generate PDF files from JPG images in subfolders of a specified directory and save them to the target_pdf_generated folder.
 
+create-www-conf.sh
+This script sets up a new virtual host in Apache.
+1. Create a domain folder in /var/www.
+2. Inside the domain folder, create public_html and logs subfolders.
+3. Generate a sample index.html file.
+4. Append the new domain entry after the last existing 127.0.0.1 entry in the hosts file.
+5. Enable the virtual host configuration.
+6. Verify the Apache configuration.
+7. Restart the Apache web server.
+8. Set ownership and permissions for the user and the www-data group.
+
 sh files need to be granted run rights.
