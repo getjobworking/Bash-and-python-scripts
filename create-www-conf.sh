@@ -2,7 +2,7 @@
 
 # Description: This script sets up a new virtual host in Apache.
 # Usage: ./setup_virtual_host.sh <domain_name>
-# Example: ./setup_virtual_host.sh mojadomena.local
+# Example: ./setup_virtual_host.sh mydomain.local
 
 if [ $# -lt 1 ]; then
     echo "Usage: $0 <domain_name>"
