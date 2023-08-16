@@ -27,7 +27,9 @@ A script to generate PDF files from JPG images in subfolders of a specified dire
 
 create-www-conf.sh
 This script sets up a new virtual host in Apache.
+
 Usage: ./setup_virtual_host.sh <domain_name>
+
 Example: ./setup_virtual_host.sh mydomain.local
 
 1. Create a domain folder in /var/www.
@@ -40,8 +42,11 @@ Example: ./setup_virtual_host.sh mydomain.local
 8. Set ownership and permissions for the user and the www-data group.
 
 setwwwr.sh
+
 This script changes ownership and permissions for a specified folder and its contents.
+
 Usage: ./setwwwr.sh <folder> [user]
+
 If user is not provided, the script uses the user running the script
 
 
